@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Moonlight</title>
+        <link rel="stylesheet" href="../../../public/css/fontAwesome.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <section>
+                <p class="title">UI Kit</p>
+                <p class="medium-paragraph">Welcome to the UI Kit page!</p>
+                <p class="medium-paragraph">This is a simple example of a UI kit page.</p>
+                <p class="medium-paragraph">Feel free to customize it as per your requirements.</p>
+                <p class="medium-paragraph">Happy coding!</p>
+                <p class="small-paragraph">
+                    For more information, visit the
+                    <a href="https://murphyisdev.com">Moonlight documentation</a>.
+                </p>
+            </section>
+            <section id="buttons">
+                <p class="title">Buttons</p>
+                <div class="container-buttons">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-outline">Outline Button</button>
+                    <button class="btn btn-gosth">Gosth Button</button>
+                    <button class="btn btn-link">Link Button</button>
+                    <button class="btn btn-primary btn-small">Small Button</button>
+                    <button class="btn btn-primary btn-large">Large Button</button>
+                    <button class="btn btn-primary disabled">Disabled Button</button>
+                    <button class="btn btn-primary"><i class="fas fa-check"></i> Button with Icon</button>
+                    <button class="btn btn-primary loading">Loading...</button>
+                    <button class="btn btn-danger btn-small">Eliminar</button>
+                    <button class="btn btn-warning btn-small">Advertencia</button>
+                </div>
+            </section>
+            <section id="modals">
+                <p class="title">Modals</p>
+                <!-- Center modal -->
+                <button class="btn btn-primary" data-modal-id="modal-center">Open Modal Center</button>
+                <div class="modal-overlay" id="modal-center">
+                    <div class="modal">
+                        <button class="modal-close" data-close>&times;</button>
+                        <h3>Modal centrado</h3>
+                        <p>Este modal aparece centrado en pantalla con una transición suave.</p>
+                    </div>
+                </div>
+
+                <!-- Top modal -->
+                <button class="btn btn-outline" data-modal-id="modal-top">Open Modal Top</button>
+                <div class="modal-overlay" id="modal-top">
+                    <div class="modal modal-xl open-on-top">
+                        <button class="modal-close" data-close>&times;</button>
+                        <h3>Modal desde arriba</h3>
+                        <p>Este modal se desliza desde la parte superior con una animación.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="notifications">
+                <p class="title">Alerts and Notifications</p>
+                <div class="alert warning">
+                    <i class="fas fa-info-circle"></i>
+                    <div class="text">
+                        <h6>Information</h6>
+                        <p class="medium-paragraph">This is an informative message for the user.</p>
+                    </div>
+                </div>
+                <div class="alert error">
+                    <i class="fas fa-info-circle"></i>
+                    <div class="text">
+                        <h6>Error</h6>
+                        <p class="medium-paragraph">
+                            Oops! An error was encountered while processing your request. Please try again later or
+                            contact support if the issue persists.
+                        </p>
+                    </div>
+                </div>
+                <div class="alert success">
+                    <i class="fas fa-check"></i>
+                    <div class="text">
+                        <h6>Success</h6>
+                        <p class="medium-paragraph">Your operation has been successfully completed.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="forms">
+                <form action="#" method="POST">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="title">Forms and inputs</p>
+                            <p class="medium-paragraph">Complete the next form</p>
+                        </div>
+                        <!-- Text Input -->
+                        <div class="form-group col-md-6">
+                            <label for="textInput">Text Input:</label>
+                            <input type="text" id="textInput" name="textInput" placeholder="Enter text here" />
+                            <span class="error-message">This field is required.</span>
+                        </div>
+
+                        <!-- Number Input -->
+                        <div class="form-group col-md-6">
+                            <label for="numberInput">Number Input:</label>
+                            <input type="number" id="numberInput" name="numberInput" placeholder="Enter a number" />
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Radio Buttons -->
+                        <div class="form-group col-md-6">
+                            <label>Radio Buttons:</label>
+                            <div class="content-radio-buttons">
+                                <label><input type="radio" name="radioOption" value="option1" /> Option 1</label>
+                                <label><input type="radio" name="radioOption" value="option2" /> Option 2</label>
+                                <label><input type="radio" name="radioOption" value="option3" /> Option 3</label>
+                            </div>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Checkboxes -->
+                        <div class="form-group col-md-6">
+                            <label>Checkboxes:</label>
+                            <div class="content-checkboxes">
+                                <label><input type="checkbox" name="checkboxOption" value="option1" /> Option 1</label>
+                                <label><input type="checkbox" name="checkboxOption" value="option2" /> Option 2</label>
+                                <label><input type="checkbox" name="checkboxOption" value="option3" /> Option 3</label>
+                            </div>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Dropdown -->
+                        <div class="form-group col-md-6">
+                            <label for="dropdown">Select an Option:</label>
+                            <select id="dropdown" name="dropdown">
+                                <option value="">-- Select --</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Text Area -->
+                        <div class="form-group col-md-6">
+                            <label for="textArea">Text Area:</label>
+                            <textarea
+                                id="textArea"
+                                name="textArea"
+                                rows="4"
+                                placeholder="Enter your message"
+                            ></textarea>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Date Input -->
+                        <div class="form-group col-md-6">
+                            <label for="dateInput">Date Input:</label>
+                            <input type="date" id="dateInput" name="dateInput" />
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- File Input -->
+                        <div class="form-group col-md-6">
+                            <label>File Input:</label>
+                            <div class="custom-file-input">
+                                <input type="file" id="fileInput" name="fileInput" class="hidden-input" />
+                                <div class="input-display">
+                                    <span class="file-text">Choose file...</span>
+                                    <span class="browse-btn">Browser</span>
+                                </div>
+                            </div>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Email Input -->
+                        <div class="form-group col-md-6">
+                            <label for="emailInput">Email Input:</label>
+                            <input type="email" id="emailInput" name="emailInput" placeholder="Enter your email" />
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="form-group col-md-6">
+                            <label for="passwordInput">Password Input:</label>
+                            <input
+                                type="password"
+                                id="passwordInput"
+                                name="passwordInput"
+                                placeholder="Enter your password"
+                            />
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Search Input -->
+                        <div class="form-group col-md-6">
+                            <label for="searchInput">Search Input:</label>
+                            <input type="search" id="searchInput" name="searchInput" placeholder="Search here" />
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Tel Input -->
+                        <div class="form-group col-md-6">
+                            <label for="telInput">Telephone Input:</label>
+                            <input type="tel" id="telInput" name="telInput" placeholder="Enter your phone number" />
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- URL Input -->
+                        <div class="form-group col-md-6">
+                            <label for="urlInput">URL Input:</label>
+                            <input type="url" id="urlInput" name="urlInput" placeholder="Enter a URL" />
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Range Input -->
+                        <div class="form-group col-md-6">
+                            <label for="rangeInput">Range Input:</label>
+                            <input type="range" id="rangeInput" name="rangeInput" min="0" max="100" />
+                            <span class="error-message"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-group col-md-6">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section id="dropdown">
+                <div class="dropdown-container">
+                    <button class="dropdown-button" id="dropdownToggle">Opciones</button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="#">Opción 1</a>
+                        <a href="#">Opción 2</a>
+                        <a href="#">Opción 3</a>
+                    </div>
+                </div>
+            </section>
+            <section id="typographie">
+                <p class="title">Titles</p>
+                <div class="content-ui">
+                    <h1>H1 Title</h1>
+                    <h2>H2 Title</h2>
+                    <h3>H3 Title</h3>
+                    <h4>H4 Title</h4>
+                    <h5>H5 Title</h5>
+                    <h6>H6 Title</h6>
+                </div>
+                <div class="content-ui">
+                    <p class="subtitle">Subtitles</p>
+                    <p class="large-subtitle">Large Subtitle</p>
+                    <p class="medium-subtitle">Medium Subtitle</p>
+                    <p class="subtitle">Standar Subtitle</p>
+                </div>
+                <div class="content-ui">
+                    <p class="subtitle">Párrafos</p>
+                    <p class="paragraph">
+                        This is an standard paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                        vero est, non aliquid enim laborum repellat optio molestiae ut deleniti magnam dolorum ipsa
+                        quidem quaerat. Nam, vitae. Nisi, libero voluptatibus.
+                    </p>
+                    <p class="medium-paragraph">
+                        This is a small paragraph. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+                        voluptas omnis velit doloremque libero architecto neque quae tenetur, necessitatibus nulla
+                        commodi et qui. Possimus mollitia pariatur voluptates consequatur distinctio rerum.
+                    </p>
+                    <p class="small-paragraph">
+                        This is an extra small paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam, voluptatibus. Quod vero est, non aliquid enim laborum repellat optio molestiae ut
+                        deleniti magnam dolorum ipsa quidem quaerat. Nam, vitae. Nisi, libero voluptatibus.
+                    </p>
+                </div>
+            </section>
+            <section id="badges">
+                <h2>Badges</h2>
+                <span class="badge badge-primary">Default</span>
+                <span class="badge badge-outline">Outline</span>
+                <span class="badge badge-secondary">Secondary</span>
+                <span class="badge badge-danger">Danger</span>
+                <span class="badge badge-success">Success</span>
+                <span class="badge badge-warning">Warning</span>
+                <span class="badge badge-info">Info</span>
+            </section>
+            <section id="tables">
+                <h2>Tables</h2>
+                <div class="content-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Email</th>
+                                <th>Rol</th>
+                                <th>Estado</th>
+                                <th class="actions">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Juan Pérez</td>
+                                <td>juan@ejemplo.com</td>
+                                <td>Admin</td>
+                                <td>Activo</td>
+                                <td class="actions">
+                                    <div class="btn btn-small btn-primary"><i class="far fa-eye"></i></div>
+                                    <div class="btn btn-small btn-outline"><i class="far fa-pencil"></i></div>
+                                    <div class="btn btn-small btn-danger"><i class="far fa-trash"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>María López</td>
+                                <td>maria@ejemplo.com</td>
+                                <td>Editor</td>
+                                <td>Activo</td>
+                                <td class="actions">
+                                    <div class="btn btn-small btn-primary"><i class="far fa-eye"></i></div>
+                                    <div class="btn btn-small btn-outline"><i class="far fa-pencil"></i></div>
+                                    <div class="btn btn-small btn-danger"><i class="far fa-trash"></i></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Carlos Rodríguez</td>
+                                <td>carlos@ejemplo.com</td>
+                                <td>Usuario</td>
+                                <td>Pendiente</td>
+                                <td class="actions">
+                                    <div class="btn btn-small btn-primary"><i class="far fa-eye"></i></div>
+                                    <div class="btn btn-small btn-outline"><i class="far fa-pencil"></i></div>
+                                    <div class="btn btn-small btn-danger"><i class="far fa-trash"></i></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="cards">
+                <div class="row">
+                    <div class="card col-md-4">
+                        <div class="header">
+                            <h3>Basic Card</h3>
+                            <p class="medium-paragraph">Card description</p>
+                        </div>
+                        <div class="body">
+                            <p class="paragraph">This is for a Basic card the content</p>
+                            <a href="#" class="btn btn-primary btn-small">Action</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 card-primary">
+                        <div class="header">
+                            <h3>Basic Card</h3>
+                            <p class="medium-paragraph">Card description</p>
+                        </div>
+                        <div class="body">
+                            <p class="paragraph">This is for a Basic card the content</p>
+                            <a href="#" class="btn btn-outline btn-small">Action</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4 card-outline">
+                        <div class="header">
+                            <h3 color="">Basic Card</h3>
+                            <p class="medium-paragraph">Card description</p>
+                        </div>
+                        <div class="body">
+                            <p class="paragraph">This is for a Basic card the content</p>
+                            <a href="#" class="btn btn-primary btn-small">Action</a>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="tab">
+                    <div class="buttons">
+                        <div class="tab-item active" data-tab="Notas">Notas</div>
+                        <div class="tab-item" data-tab="Asistencia">Asistencia</div>
+                        <div class="tab-item" data-tab="Contacto">Contacto de emergencia</div>
+                        <div class="tab-item" data-tab="cita">Agendar Cita</div>
+                    </div>
+                    <div class="content">
+                        <div class="tab-content active" id="Notas">
+                            <h3>Notas</h3>
+                            <p>Notas del alumno</p>
+                        </div>
+                        <div class="tab-content" id="Asistencia">
+                            <h3>Asistencia</h3>
+                            <p>Asistencia del alumno</p>
+                        </div>
+                        <div class="tab-content" id="Contacto">
+                            <h3>Contacto de emergencia</h3>
+                            <p>Contacto de emergencia del alumno</p>
+                        </div>
+                        <div class="tab-content" id="cita">
+                            <h3>Cita</h3>
+                            <p>Agendar cita con padres del alumno</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Dropdown Script -->
+        <script>
+            const toggle = document.getElementById("dropdownToggle");
+            const menu = document.getElementById("dropdownMenu");
+
+            toggle.addEventListener("click", () => {
+                menu.classList.toggle("show");
+            });
+
+            // Cierra el menú al hacer clic fuera
+            document.addEventListener("click", (e) => {
+                if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+                    menu.classList.remove("show");
+                }
+            });
+        </script>
+        <!-- Tab Script -->
+        <script>
+            const buttons = document.querySelectorAll(".tab-item");
+            const contents = document.querySelectorAll(".tab-content");
+
+            buttons.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const tabId = btn.getAttribute("data-tab");
+
+                    // Remove "active" from all buttons and contents
+                    buttons.forEach((b) => b.classList.remove("active"));
+                    contents.forEach((c) => c.classList.remove("active"));
+
+                    // Add "active" to clicked button and corresponding content
+                    btn.classList.add("active");
+                    document.getElementById(tabId).classList.add("active");
+                });
+            });
+        </script>
+        <!-- Modal Script -->
+        <script>
+            const showModal = (modalId) => {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.classList.add("show");
+                }
+            };
+
+            const closeModal = (modalId) => {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.classList.remove("show");
+                }
+            };
+
+            // Asociar eventos a los botones que abren modales
+            document.querySelectorAll("[data-modal-id]").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const modalId = btn.getAttribute("data-modal-id");
+                    showModal(modalId);
+                });
+            });
+
+            // Cierre al hacer clic en fondo o en botón con [data-close]
+            document.querySelectorAll(".modal-overlay").forEach((modalOverlay) => {
+                modalOverlay.addEventListener("click", (e) => {
+                    if (e.target === modalOverlay || e.target.hasAttribute("data-close")) {
+                        modalOverlay.classList.remove("show");
+                    }
+                });
+            });
+
+            // Cierre con tecla ESC
+            window.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") {
+                    document.querySelectorAll(".modal-overlay.show").forEach((m) => m.classList.remove("show"));
+                }
+            });
+        </script>
+    </body>
+</html>
