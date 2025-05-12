@@ -587,7 +587,8 @@ H6 {
     box-shadow: 0 10px 25px var(--shadow);
     transform: translateY(20px);
     opacity: 0;
-    transition: transform var(--transition-speed), opacity var(--transition-speed);
+    transition: transform var(--transition-speed),
+        opacity var(--transition-speed);
 }
 .modal-close {
     position: absolute;
